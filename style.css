@@ -149,6 +149,11 @@ blockquote {
   min-height: 2px;
 }
 
+.display-6{
+  font-size: 10vw;
+}
+
+
 /* Paralax Efex */
 
 #prewed .gal {
@@ -169,6 +174,50 @@ blockquote {
 }
 
 #waktu .gal.gsow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#samshow .gal {
+  opacity: 0;
+  transition: 0.8s;
+  transform: translate(0, 40px);
+}
+
+#samshow .gal.gsow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#mempalai .gal {
+  opacity: 0;
+  transition: 0.8s;
+  transform: translate(0, 40px);
+}
+
+#mempalai .gal.gsow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#acara .gal {
+  opacity: 0;
+  transition: 0.8s;
+  transform: translate(0, 40px);
+}
+
+#acara .gal.gsow {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#ucapan .gal {
+  opacity: 0;
+  transition: 0.8s;
+  transform: translate(0, 40px);
+}
+
+#ucapan .gal.gsow {
   opacity: 1;
   transform: translate(0, 0);
 }
