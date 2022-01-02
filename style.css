@@ -230,6 +230,10 @@ blockquote {
   color: #3c8ff9;
 }
 
+.date{
+  width: 30vw;
+}
+
 
 @media (max-width: 768px) {
   .p-xm-x {
@@ -260,6 +264,10 @@ blockquote {
 
   .sambut {
     margin-top: 40px;
+  }
+
+  .date{
+    width: 45vw;
   }
 
 }
