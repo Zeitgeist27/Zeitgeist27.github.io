@@ -1,6 +1,8 @@
 * {
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Moon+Dance&family=Open+Sans:wght@300&family=Roboto:wght@100&family=Satisfy&display=swap');
   font-family: 'Open Sans';
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 .font-n {
@@ -44,15 +46,14 @@
   font-family: 'Great Vibes';
 }
 body {
-  background-image: linear-gradient(to top, #9c24ff67, #1cb5e0),
-    url('img/bg-img.jpg');
+  background-image: linear-gradient(to top, #9c24ff67, #1cb5e0), url('img/bg-img.jpg');
   background-attachment: fixed;
   background-size: cover;
+  position: relative;
 }
 
 .buka {
-  width: 100vw;
-  height: 100vh;
+  z-index: 999999;
 }
 
 .avatar-depan {
@@ -105,9 +106,6 @@ blockquote {
 
 .pic,
 .vid {
-  /* min-width: 360px; */
-  /* min-width: 1vw; */
-  max-height: 200px;
   border-radius: 18px;
   text-align: center;
 }
@@ -222,7 +220,18 @@ blockquote {
   transform: translate(0, 0);
 }
 
-@media (min-width: 300px) and (max-width: 768px) {
+.saya{
+  color: #3cf948;
+  transition: .5s ease;
+}
+
+.saya:hover{
+  text-decoration: none;
+  color: #3c8ff9;
+}
+
+
+@media (max-width: 768px) {
   .p-xm-x {
     padding: 20px;
   }
@@ -251,5 +260,12 @@ blockquote {
 
   .sambut {
     margin-top: 40px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  footer{
+    margin-bottom: 3rem;
   }
 }

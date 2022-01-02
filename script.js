@@ -49,7 +49,6 @@ $(document).ready(function () {
 
     let host = document.URL;
     $('.vid').click(function () {
-        console.log('oke');
         let url = $(this).data('url');
         $('body').prepend(`<div class="pop"><video class="video" controls><source src="` + host + url + `" type="video/mp4"></video></div>`);
         $('.pop').click(() => {
@@ -80,8 +79,8 @@ $(document).ready(function () {
         $('#putar').css('transition', '1s').css('opacity', '0').delay(8000).html('Buka Undangan').css('transition', '1s').css('opacity', '1');
         $('#putar').removeAttr('disabled')
         $('#putar').click(function () {
-            $('.buka').slideUp();
             $('#myVideo')[0].play();
+            $('.closes').fadeOut();
             samshow();
         });
     }, 1500, 'easeInOutExpo')
